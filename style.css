@@ -1,0 +1,25 @@
+.title {
+    border: solid 10px pink;
+    font-family: 'Lucida Sans';
+    font: bold;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.diary {
+    border: dotted 4px lightblue;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+    object-fit: contain;
+}
+
+.diary:hover {
+    border: solid 4px pink;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+    object-fit: contain;
+}
