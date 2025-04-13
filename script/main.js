@@ -5,7 +5,7 @@ function validation(id){
     if (a.length != 6){
         alert("Solution must be 6 letters long.");
     }else{
-        if (a === "ribbon"){
+        if (a.toLowerCase() === "ribbon"){
             alert("You found her.")
             open("https://docs.google.com/document/d/1rDYz8kdn3ajeU3WpqHYIMUwrum_gYx_Yu1BOqThzJwE/edit?usp=sharing")
         }else{
