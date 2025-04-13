@@ -14,6 +14,11 @@
     border: dotted 4px lightblue;
     padding: 10px;
     font-family: 'Lucida Sans';
+}
+
+.diary img {
+    width: 100%;
+    height: auto;
     object-fit: contain;
 }
 
@@ -21,5 +26,11 @@
     border: solid 4px pink;
     padding: 10px;
     font-family: 'Lucida Sans';
+    object-fit: contain;
+}
+
+.diary:hover img {
+    width: 100%;
+    height: auto;
     object-fit: contain;
 }
