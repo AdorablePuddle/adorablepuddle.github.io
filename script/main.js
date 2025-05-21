@@ -9,6 +9,7 @@ function validation(id){
         alert("And in return")
         alert("it made her a monster.")
         open("https://docs.google.com/document/d/1N1Jc9ahisq7pOaOVCPrM-DzRoD7GTHutYBGx-4kdYs8/edit?usp=sharing")
+        return;
     }
     if (a.length != 6){
         alert("Solution must be 6 letters long.");
