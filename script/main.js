@@ -2,7 +2,7 @@
 
 function validation(id){
     let a = document.getElementById("passcode").value;
-    if (a.length != 6){
+    if (a.length != 6 && a.toLowerCase() !== "torned ribbon"){
         alert("Solution must be 6 letters long.");
     }else{
         if (a.toLowerCase() === "ribbon"){
