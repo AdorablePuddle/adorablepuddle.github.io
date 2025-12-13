@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style_2.css">
+        <script type="text/javascript" src="script/calculator.js"></script>
+    </head>
+    <head>
+        <title>
+            Koharu's Stat Calculator for Exedra
+        </title>
+    </head>
+    <header>
+        <h1 class="title">
+            Koharu's Stat Calculator for Exedra
+        </h1>
+    </header>
+    <body>
+        <div class="precontent">
+            <label for="rarity">Unit's Rarity</label>
+            <select id="rarity" name="rarity">
+                <option value="3">✦✦✦✧✧</option>
+                <option value="4">✦✦✦✦✧</option>
+                <option value="5" selected>✦✦✦✦✦</option>
+            </select>
+            <label>  </label>
+            <label for="ascension">Ascensions</label>
+            <select id="ascension" name="ascension">
+                <option value="0" selected>✧✧✧✧✧</option>
+                <option value="1">✦✧✧✧✧</option>
+                <option value="2">✦✦✧✧✧</option>
+                <option value="3">✦✦✦✧✧</option>
+                <option value="4">✦✦✦✦✧</option>
+                <option value="5">✦✦✦✦✦</option>
+            </select><br>
+            <label for="level">Calculate at Level (from 1 to 120)</label>
+            <input type="number" id="level" name="level"/><br>
+            <label for="mlevel">Calculate at Magic Level (from 1 to 130)</label>
+            <input type="number" id="mlevel" name="mlevel"/><br>
+            <label for="hlevel">Calculate at Heartphial Level (from 1 to 50)</label>
+            <input type="number" id="hlevel" name="hlevel"/><br>
+            <label for="has_personal_portrait">Does this kioku have a personal portrait?</label>
+            <input type="checkbox" id="has_personal_portrait" name="has_personal_portrait"/><br>
+        </div>
+        <div class="content">
+            <div class="min">
+                <label>Min stats:</label><br>
+                <div class="stat_input">
+                    <label for="min_hp">HP</label>
+                    <input type="number" id="min_hp" name="min_hp"/><br>
+                    <label for="min_atk">ATK</label>
+                    <input type="number" id="min_atk" name="min_atk"/><br>
+                    <label for="min_def">DEF</label>
+                    <input type="number" id="min_def" name="min_def"/><br>
+                </div>
+            </div>
+            <div class="max">
+                <label>Max stats:</label><br>
+                <div class="stat_input">
+                    <label for="max_hp">HP</label>
+                    <input type="number" id="max_hp" name="max_hp"/><br>
+                    <label for="max_atk">ATK</label>
+                    <input type="number" id="max_atk" name="max_atk"/><br>
+                    <label for="max_def">DEF</label>
+                    <input type="number" id="max_def" name="max_def"/><br>
+                </div>
+            </div>
+        </div>
+        <div class="extra-settings">
+            <div class="extra-setting">
+                <label for="has_support_kioku">Does this kioku have a support equipped?</label>
+                <input type="checkbox" id="has_support_kioku" name="has_support_kioku" onchange="toggle_support('has_support_kioku', 'support')" checked/><br>
+                <div id="support" class="extra_stat_input">
+                        <label for="support_hp">Support Base HP</label>
+                        <input type="number" id="support_hp" name="support_hp"/><br>
+                        <label for="support_atk">Support Base ATK</label>
+                        <input type="number" id="support_atk" name="support_atk"/><br>
+                        <label for="support_def">Support Base DEF</label>
+                        <input type="number" id="support_def" name="support_def"/><br>
+                </div>
+            </div>
+            <div class="extra-setting">
+                <label for="has_equipped_portrait">Does this kioku have a portrait equipped?</label>
+                <input type="checkbox" id="has_equipped_portrait" name="has_equipped_portrait" onchange="toggle_support('has_equipped_portrait', 'portrait')" checked/><br>
+                <div id="portrait" class="extra_stat_input">
+                        <label for="portrait_hp">Portrait Base HP</label>
+                        <input type="number" id="portrait_hp" name="portrait_hp"/><br>
+                        <label for="portrait_atk">Portrait Base ATK</label>
+                        <input type="number" id="portrait_atk" name="portrait_atk"/><br>
+                        <label for="portrait_def">Portrait Base DEF</label>
+                        <input type="number" id="portrait_def" name="portrait_def"/><br>
+                </div>
+            </div>
+        </div>
+        <div class="submit">
+            <button type="submit" class="submission" onclick="submit()">Submit</button>
+        </div>
+        <div class="postcontent">
+            <table class="final-table">
+                <tr>
+                    <td>Stat</td>
+                    <td>Base value</td>
+                </tr>
+                <tr>
+                    <td>HP</td>
+                    <td id = "final_hp">0</td>
+                </tr>
+                <tr>
+                    <td>ATK</td>
+                    <td id = "final_atk">0</td>                    
+                </tr>
+                <tr>
+                    <td>DEF</td>
+                    <td id = "final_def">0</td>                    
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

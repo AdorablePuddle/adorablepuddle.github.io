@@ -24,9 +24,13 @@ function validation(id){
     if (a.toLowerCase() === "pointers") {
         open("https://en.wikipedia.org/wiki/ASCII")
         return;
-    }                        
+    }
     if (a.toLowerCase() === "f104dd78950e4df55393fd7d6a30f41e88f06d3b9253fa10") {
         open("./f104dd78950e4df55393fd7d6a30f41e88f06d3b9253fa10.html")
+        return;
+    }
+    if (a.toLowerCase() === "koharuapotheosiswhen") {
+        open("./exedra_stat_calculator.html")
         return;
     }
     alert("Incorrect Solution.")

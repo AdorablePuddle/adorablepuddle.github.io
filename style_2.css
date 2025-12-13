@@ -1,0 +1,145 @@
+.title {
+    border: solid 10px pink;
+    font-family: 'Lucida Sans';
+    font: bold;
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+}
+
+.stat_input label {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+}
+
+.stat_input input {
+    display: inline-block;
+    width: max-content;
+}
+
+.precontent {
+    border: 4px pink solid;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+    margin: 5px;
+    text-align: center;
+}
+
+.precontent label {
+    display: inline-block;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.precontent input select{
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+div.min {
+    border: 4px lightblue solid;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+    margin: 5px;
+    text-align: center;
+}
+
+div.max {
+    border: 4px lightblue solid;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+    margin: 5px;
+    text-align: center;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit button {
+    font-family: 'Lucida Sans';
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border: 3px solid;
+    border-radius: 4px;
+    border-color: #fec5e5;
+    background-color: #fff1fa;
+    width: 25%;
+}
+
+.submit button:hover {
+    border: 3px solid;
+    border-color: #feb5de;
+    background-color: #fff1fa;
+    box-shadow: 0 4px 16px 0 #00000010;
+}
+
+.extra-settings {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+}
+
+.extra-setting {
+    border: 4px #fff1de solid;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+    margin: 5px;
+    text-align: center;
+}
+
+.extra-setting label {
+    display: inline-block;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.extra-setting input select{
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.postcontent {
+    border: 4px lightblue solid;
+    padding: 10px;
+    font-family: 'Lucida Sans';
+    margin: 5px;
+    text-align: center;
+    
+}
+
+.extra_stat_input label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+.extra_stat_input input {
+    display: inline-block;
+    width: max-content;
+}
+
+.final-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.final-table th, td {
+    padding-right: 5px;
+}
